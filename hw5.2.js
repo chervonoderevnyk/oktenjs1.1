@@ -146,17 +146,17 @@
 // EXAMPLE:
 //     [{name: 'Dima', age: 13}, {model: 'Camry'}]  ===> [ Dima, 13, Camry ]
 
-const arr = [{name: 'Dima', age: 13}, {model: 'Camry'}];
-function asd(array){
-    let newarray = [];
-    for (let i = 0, j = 0; i < array.length; i++) {
-        for (const key in array[i]) {
-            newarray[j++] = array[i][key];
-        }
-    }
-    return newarray;
-}
-console.log(asd(arr));
+// const arr = [{name: 'Dima', age: 13}, {model: 'Camry'}];
+// function asd(array){
+//     let newarray = [];
+//     for (let i = 0, j = 0; i < array.length; i++) {
+//         for (const key in array[i]) {
+//             newarray[j++] = array[i][key];
+//         }
+//     }
+//     return newarray;
+// }
+// console.log(asd(arr));
 
 
 
