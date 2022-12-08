@@ -112,18 +112,18 @@
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
 
-let arr = [1,0,6,0,3];
-//console.log(arr.indexOf(0));
-// arr.splice(arr.indexOf(0),1);
-// console.log(arr)
-// arr.splice(arr.indexOf(0),1);
+// let arr = [1,0,6,0,3];
+// console.log(arr.indexOf(0));
+//  arr.splice(arr.indexOf(0),1);
+//  console.log(arr)
+//  arr.splice(arr.indexOf(0),1);
+//  console.log(arr);
+//  console.log(arr.splice);
+// console.log(str.indexOf('0',0));
+// console.log(str.indexOf('0',2));
 // console.log(arr);
-// console.log(arr.splice);
-console.log(str.indexOf('0',0));
-console.log(str.indexOf('0',2));
-console.log(arr);
 
-
+idex 0 < index 3 todi ........................
 
 
 // for (let i = 0; i < arr.length; i++) {

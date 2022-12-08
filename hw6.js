@@ -52,6 +52,7 @@
 // let split = str.split(' ');
 // console.log(split);
 
+
 // є масив чисел [10,8,-7,55,987,-1011,0,1050,0] . за допомоги map та колбеку перетворити всі об'єкти в масиві на стрінгові.
 
 // let arr = [10,8,-7,55,987,-1011,0,1050,0];
@@ -64,18 +65,18 @@
 // sortNums(nums,'ascending') // [3,11,21]
 // sortNums(nums,'descending') // [21,11,3]
 
- let nums = [11,21,3];
-
-const sortNums = (direction, arr)=> {
-    if (direction === 'ascending') {
-        arr.sort((a, b) => a - b);
-    }else if (direction === 'descending') {
-        arr.sort((a, b) => b - a);
-    }
-    return arr;
-}
-console.log(sortNums('ascending',nums));
-console.log(sortNums('descending', nums));
+//  let nums = [11,21,3];
+//
+// const sortNums = (direction, arr)=> {
+//     if (direction === 'ascending') {
+//         arr.sort((a, b) => a - b);
+//     }else if (direction === 'descending') {
+//         arr.sort((a, b) => b - a);
+//     }
+//     return arr;
+// }
+// console.log(sortNums('ascending',nums));
+// console.log(sortNums('descending', nums));
 
 // - є масив
 
