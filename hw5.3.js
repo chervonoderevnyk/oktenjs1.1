@@ -104,11 +104,35 @@
   // foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
   // foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
+// let array = [9,8,0,4];
+//
+// function iiii(arr,num) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i + 1]) {
+//             let erri = arr[num];
+//             arr[num] = arr[num + 1];
+//             arr[num + 1] = erri;
+//         }
+//     }
+//     return arr;
+// }
+// console.log(iiii(array,1));
+
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
 // Двожина масиву від 2 до 100
 // EXAMPLE:
-// [1,0,6,0,3] => [1,6,3,0,0]
-// [0,1,2,3,4] => [1,2,3,4,0]
-// [0,0,1,0]   => [1,0,0,0]
+// [1,0,6,0,3] => [1,6,3,0,0];
+// [0,1,2,3,4] => [1,2,3,4,0];
+//    => [1,0,0,0];
+
+// let array1 = [1,0,6,0,3];
+// let array2 = [0,1,2,3,4];
+// let array3 = [0,0,1,0,0];
+//
+// let filter1 = array1.sort((arr) => arr === 0 / array1.push());
+// let filter2 = array2.sort((arr) => arr === 0 / array2.push());
+// let filter3 = array3.sort((arr) => arr === 0 / array3.push());
+//
+// console.log(filter1, filter2, filter3);
 
