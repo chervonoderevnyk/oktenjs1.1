@@ -101,8 +101,8 @@
 // -   функція Приймає масив та число "i", та міняє місцями об`єкт який знаходиться в індексі "i" на "i+1"
 //   EXAMPLE:
 //   foo([9,8,0,4], 0) // ==> [ 8, 9, 0, 4 ]
-//   foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
-//   foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
+  // foo([9,8,0,4], 1) // ==> [ 9 ,0, 8, 4 ]
+  // foo([9,8,0,4], 2) // ==> [ 9, 8, 4, 0 ]
 
 
 // - Сворити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
@@ -111,55 +111,4 @@
 // [1,0,6,0,3] => [1,6,3,0,0]
 // [0,1,2,3,4] => [1,2,3,4,0]
 // [0,0,1,0]   => [1,0,0,0]
-
-// let arr = [1,0,6,0,3];
-// console.log(arr.indexOf(0));
-//  arr.splice(arr.indexOf(0),1);
-//  console.log(arr)
-//  arr.splice(arr.indexOf(0),1);
-//  console.log(arr);
-//  console.log(arr.splice);
-// console.log(str.indexOf('0',0));
-// console.log(str.indexOf('0',2));
-// console.log(arr);
-
-idex 0 < index 3 todi ........................
-
-
-// for (let i = 0; i < arr.length; i++) {
-//     const us = arr[i];
-//     if (us === 0) {
-//         console.log(us);
-//     }
-// }
-//--------------------------------------------------
-// let arr0 = [];
-// let arrChyslo = [];
-//
-// function asd(abc) {
-//     for (let i = 0; i < arr.length; i++) {
-//         const us = arr[i];
-//         if (us === 0) {
-//             arr0[i] = us;
-//             console.log(us);
-//         }
-//
-//     }
-//     return us;
-// }
-// console.log(arr0)
-// console.log(arr)
-// console.log(arrChyslo)
-//---------------------------------------------------
-
-// function xxx(maas) {
-//     for (const rem of maas) {
-//         if (rem > 0) {
-//             console.log(rem);
-//         }
-//     }
-// }
-//
-// xxx(arr);
-// console.log(xxx(arr));
 

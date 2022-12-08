@@ -71,20 +71,11 @@
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, залишивши тільки парні числа (без 0!)
 
-//Я не можу тут придумати щось!!!
 // let array = [];
-// for (let i = 1; i < 6; i++){
-//     array.push(Math.round(Math.random()*100));
-//    //let filter = array.filter((arr)=> arr.value %2===0);
-//    let filter = array.filter(function (arr){
-//        return arr.value %2===0;
-//    });
+// for (let i = 1; i < 6; i++) {
+//     array.push(Math.round(Math.random() * 100));
 // }
-// //Хоч вбий, не знаю як то фільтранути!!!!!!!!!!!!!!!!!!!!!!!!!
-// //console.log(array.filter((arr)=> arr.value %2===0));
-// //
-// console.log(filter);
-
+// console.log(array.filter((arr)=> arr %2===0));
 
 // - Напишіть функцію capitalize(str), яка повертає рядок, у якому кожне слово починається з великої літери.
 
