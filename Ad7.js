@@ -1,4 +1,3 @@
-
 // - Створити клас або функцію конструктор, за допомоги якої можна створювати об'єкти наступного вигляду.
 // Конструктор повинен приймати значення для кожної властивості, в т.ч і для властивостей внутрішніх об'єктів
 
@@ -65,6 +64,8 @@
 //         new Company('Romaguera-Crona','Multi-layered client-server neural-net','harness real-time e-markets'));
 // console.log(user);
 
+
+
 // -  Створити функцію конструктор / клас  який описує об'єкт тегу
 // Поля :
 //     -назва тегу ()
@@ -97,116 +98,48 @@
 //
 // }
 
-let TegsArray = [
-    {
-    titleOfTag: 'a',
-        action: `HTML теґ <a> створює посилання на іншу сторіку(Зовнішне посилання) або на певний елемент цієї сторінки(Внутрішне посилання)`,
-    attrs: [
-    {titleOfAttr: 'href', actionOfAttr: 'вказує місце, куди буде посилатися створене посилання'},
-        {titleOfAttr:'download',actionOfAttr:'Пропонує завантажити вказаний за посиланням файл'},
-        {titleOfAttr:'target',actionOfAttr:'Ім*я вікна або фрейму, куди браузер буде завантажувати документ'},
-        {titleOfAttr:'media',actionOfAttr:'Вказує, що пов’язаний документ оптимізований під деякий пристрій'},
-]},
-    {
-        titleOfTag: 'div',
-        action: `Тег <div> використовується, щоб групувати блоки інформації та форматувати її за допомогою CSS.`,
-        attrs: [
-            {titleOfAttr: 'align',
-                actionOfAttr: 'Визначає вирівнювання вмісту всередині `<div>` елемента.'},
-            {titleOfAttr:'class',actionOfAttr:'Визначає один або кілька класів, щоб зв’язати елемент з таблицею стилів (CSS)'},
-            {titleOfAttr:'id',actionOfAttr:'Задає унікальний ідентифікатор для елемента.'},
-            {titleOfAttr:'style',actionOfAttr:'Задає вбудований (inline) CSS стиль для елемента'},
-        ]},
-    {
-        titleOfTag: 'h1',
-        action: `Teg <H1> визначає найбільш важливі заголовки`,
-        attrs: [
-            {titleOfAttr: 'align',
-                actionOfAttr: 'Вирівнювання заголовку.'},
-            {titleOfAttr:'lang',actionOfAttr:'Визначає основну мову вмісту елемента'},
-            {titleOfAttr:'hidden',actionOfAttr:'Приховує вміст елемента від перегляду'},
-            {titleOfAttr:'dropzone',actionOfAttr:'Вказує, що робити з перетягувати елементи.'},
-        ]},
-    {
-        titleOfTag: 'span',
-        action: `Тег <span> являє собою універсальний порожній контейнер, який необхідно заповнити будь-яким вмістом, або згрупувати вкладені елементи для їх подальшої стилізації засобами CSS, і при необхідності динамічно маніпулювати ними з використанням скриптів`,
-        attrs: [
-            {titleOfAttr: 'title',
-                actionOfAttr: 'Вказує додаткову текстову підказку'},
-            {titleOfAttr:'class',actionOfAttr:'Визначає один або кілька класів, щоб зв’язати елемент з таблицею стилів (CSS)'},
-            {titleOfAttr:'style',actionOfAttr:'Задає вбудований (inline) CSS стиль для елемента'},
-            {titleOfAttr:'dropzone',actionOfAttr:'Вказує, що робити з перетягувати елементи.'},
-        ]},
-    {
-        titleOfTag: 'input',
-        action: `Головним чином <input> призначений для створення текстових полів, різних кнопок, перемикачів і прапорців.`,
-        attrs: [
-            {titleOfAttr: 'value',
-                actionOfAttr: 'Задає значення елемента.'},
-            {titleOfAttr:'step',actionOfAttr:'Встановлює інтервал збільшення значення числового поля або повзунка'},
-            {titleOfAttr:'size',actionOfAttr:'Встановлює ширину текстового поля за кількістю символів.'},
-            {titleOfAttr:'required',actionOfAttr:'Вказує що поле обов\'язкове для заповнення.'},
-        ]},
-    {
-        titleOfTag: 'form',
-        action: `HTML теґ <form> використовується для створення HTML форми на сторінці.`,
-        attrs: [
-            {titleOfAttr: 'accept',
-                actionOfAttr: 'Визначає, розділений комами, перелік типів файлів, які можуть бути завантажені на сервер.'},
-            {titleOfAttr:'action',actionOfAttr:'Вказує URL адресу обробника форми'},
-            {titleOfAttr:'name',actionOfAttr:'Вказує унікальне імʼя форми.'},
-            {titleOfAttr:'target',actionOfAttr:'Фрейм або вікно в яке буде завантажена відповідь сервера.'},
-        ]},
-    {
-        titleOfTag: 'option',
-        action: `HTML тег option призначений для створення пункту списку для тега select чи datalist`,
-        attrs: [
-            {titleOfAttr: 'disabled',
-                actionOfAttr: 'Відключає пункт списку.'},
-            {titleOfAttr:'selected',actionOfAttr:'Задає пункт списку, який буде обраний за дефолтом.'},
-            {titleOfAttr:'value',actionOfAttr:'Задає значення елементу `select`, яке буде обробляти скрипт.'},
-            {titleOfAttr:'label',actionOfAttr:'Вказує короткий опис для пункту списку'},
-        ]},
-    {
-        titleOfTag: 'select',
-        action: `Тег <select> дозволяє створити елемент інтерфейсу у вигляді списку, що розкривається, а також список з одним або множинним вибором`,
-        attrs: [
-            {titleOfAttr: 'disabled',
-                actionOfAttr: 'Блокує доступ та зміну елемента.'},
-            {titleOfAttr:'form',actionOfAttr:'Повʼязує список з однією або з кількома формами.'},
-            {titleOfAttr:'multiple',actionOfAttr:'Множинний вибір'},
-            {titleOfAttr:'size',actionOfAttr:'Кількість видимих елементів спску.'},
-        ]}]
 
-    for (const item of TegsArray) {
-
-        let mainDiv = document.createElement('div');
-        document.body.append(mainDiv);
-
-        let titleOfTagDiv = document.createElement('div');
-        titleOfTagDiv.innerText = `${item.titleOfTag}`;
-        titleOfTagDiv.style.fontSize = '25px';
-        titleOfTagDiv.style.borderTop = '3px solid blue';
-        mainDiv.append(titleOfTagDiv);
-
-        let actionDiv = document.createElement('div');
-        actionDiv.innerText = `${item.action}`;
-        actionDiv.style.fontSize = '20px';
-        mainDiv.append(actionDiv);
-
-        // let attrsDiv = document.createElement('div');
-        // attrsDiv.innerText = `${item.attrs}`;
-        // mainDiv.append(attrsDiv);
-
-        let ul = document.createElement('ul');
-        mainDiv.append(ul);
-
-        for (const itemElement of item.attrs) {
-            let li = document.createElement('li');
-            li.innerText = `${itemElement.titleOfAttr} - ${itemElement.actionOfAttr}`;
-            li.style.fontSize = '18px';
-
-            ul.append(li);
-        };
-
-    };
+// class ATeg {
+//     constructor (titleOfTag,action,attrs) {
+//     this.titleOfTag = titleOfTag;
+//     this.action = action;
+//     this.attrs = attrs;
+// }
+// }
+//
+// class Attrs {
+//     constructor(titleOfAttr1, actionOfAttr1, titleOfAttr2, actionOfAttr2, titleOfAttr3, actionOfAttr3) {
+//         this.titleOfAttr1 = titleOfAttr1;
+//         this.actionOfAttr1 = actionOfAttr1;
+//         this.titleOfAttr2 = titleOfAttr2;
+//         this.actionOfAttr2 = actionOfAttr2;
+//         this.titleOfAttr3 = titleOfAttr3;
+//         this.actionOfAttr3 = actionOfAttr3;
+//     }
+// }
+//
+// let arrTeg1 = new ATeg('a', `HTML теґ створює посилання на іншу сторіку(Зовнішне посилання) або на певний елемент цієї сторінки(Внутрішне посилання)`,
+//     new Attrs( 'href', 'вказує місце, куди буде посилатися створене посилання', 'download', 'Пропонує завантажити вказаний за посиланням файл', 'target', 'Пропонує завантажити вказаний за посиланням файл'));
+//
+// let arrTeg2 = new ATeg('div', `Тег використовується, щоб групувати блоки інформації та форматувати її за допомогою CSS.`,
+//     new Attrs('align', 'Визначає вирівнювання вмісту всередині елемента.', 'class', 'Визначає один або кілька класів, щоб зв’язати елемент з таблицею стилів (CSS)', 'id', 'Задає унікальний ідентифікатор для елемента.'));
+//
+// let arrTeg3 = new ATeg('h1', `Teg визначає найбільш важливі заголовки`,
+//     new Attrs('align', 'Вирівнювання заголовку.', 'lang', 'Визначає основну мову вмісту елемента','hidden', 'Приховує вміст елемента від перегляду'));
+//
+// let arrTeg4 = new ATeg( 'span', `Тег являє собою універсальний порожній контейнер, який необхідно заповнити будь-яким вмістом, або згрупувати вкладені елементи для їх подальшої стилізації засобами CSS, і при необхідності динамічно маніпулювати ними з використанням скриптів`,
+//     new Attrs('title', 'Вказує додаткову текстову підказку', 'class', 'Визначає один або кілька класів, щоб зв’язати елемент з таблицею стилів (CSS)', 'style', 'Задає вбудований (inline) CSS стиль для елемента'));
+//
+// let arrTeg5 = new ATeg( 'input', `Головним чином призначений для створення текстових полів, різних кнопок, перемикачів і прапорців.`,
+//     new Attrs('value', 'Задає значення елемента.', 'step', 'Встановлює інтервал збільшення значення числового поля або повзунка', 'size', 'Встановлює ширину текстового поля за кількістю символів.'));
+//
+// let arrTeg6 = new ATeg( 'form', `HTML теґ використовується для створення HTML форми на сторінці.`,
+//     new Attrs('accept','Визначає, розділений комами, перелік типів файлів, які можуть бути завантажені на сервер.', 'action', 'Вказує URL адресу обробника форми', 'name', 'Вказує унікальне імʼя форми.'));
+//
+// let arrTeg7 = new ATeg( 'option', `HTML тег option призначений для створення пункту списку для тега select чи datalist.`,
+//     new Attrs('disabled', 'Відключає пункт списку.', 'selected', 'Задає пункт списку, який буде обраний за дефолтом.', 'value', 'Задає значення елементу `select`, яке буде обробляти скрипт.'));
+//
+// let arrTeg8 = new ATeg('select', `Тег дозволяє створити елемент інтерфейсу у вигляді списку, що розкривається, а також список з одним або множинним вибором`,
+//     new Attrs('disabled', 'Блокує доступ та зміну елемента.', 'form', 'Повʼязує список з однією або з кількома формами.', 'multiple', 'Множинний вибір'));
+//
+// console.log(arrTeg1,arrTeg2,arrTeg3,arrTeg4,arrTeg5,arrTeg6,arrTeg7,arrTeg8);
