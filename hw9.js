@@ -132,6 +132,7 @@
 //     }
 // ];
 //
+
 // for (const item of coursesArray) {
 //
 //     let mainDiv = document.createElement('div');
