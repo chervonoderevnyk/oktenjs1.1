@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <title>Fight Club</title>
+
+</head>
+
+<body>
+
+<ul class="menu"></ul>
+<script src="superAddit9.js"></script>
+
+<div id="content"></div>
+<h1>Правила бойцовского клуба</h1>
+<div id="wrap">
+    <div class="rules rule1">
+        <h2>Первое правило Бойцовского клуба.</h2>
+        <p>Никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule2">
+        <h2>Второе правило Бойцовского клуба.</h2>
+        <p>Никогда никому не рассказывать о Бойцовском клубе.</p>
+    </div>
+    <div class="rules rule3">
+        <h2>Третье правило Бойцовского клуба.</h2>
+        <p>В схватке участвуют только двое.</p>
+    </div>
+    <div class="rules rule4">
+        <h2>Четвертое правило Бойцовского клуба.</h2>
+        <p>Не более одного поединка за один раз.</p>
+    </div>
+
+    <div class="rules rule5">
+        <h2>Пятое правило Бойцовского клуба.</h2>
+        <p>Бойцы сражаются без обуви и голые по пояс.</p>
+    </div>
+    <div class="rules rule6">
+        <h2>Шестое правило Бойцовского клуба.</h2>
+        <p>Поединок продолжается столько, сколько потребуется.</p>
+    </div>
+    <div class="rules rule7">
+        <h2>Седьмое правило Бойцовского клуба.</h2>
+        <p>Если противник потерял сознание или делает вид, что потерял, или говорит «Хватит» — поединок
+            окончен.</p>
+    </div>
+    <div class="rules rule8">
+        <h2>Восьмое и последнее правило Бойцовского клуба.</h2>
+        <p>Новичок обязан принять бой.</p>
+    </div>
+</div>
+
+<script>
+
+
+    let idea =
+        {
+            title: 'Світоглядна філософія Тайлера.',
+            body: 'Ти- не твоя робота. Ти- не твоя машина. Ти- не вміст твого гаманця. Ти- не твої довбані штани. ТИ- СПІВОЧЕ, ВЕРТКЕ ЛАЙНО СВІТУ!'
+
+        };
+
+    rules.push(idea);
+
+    console.log(rules);
+    let {inform} = rules;
+
+    let div = document.createElement('div');
+    div.innerText = 'CONTENT:';
+    div.style.fontSize = '22px';
+    div.style.background = 'silver';
+    div.style.width = '25%';
+    div.style.marginLeft = '35%';
+    div.style.textAlign = 'center';
+
+
+    for (const blablabla of rules) {
+
+        let ul = document.createElement('ul');
+        let li = document.createElement('li');
+        li.innerText = `${rules.indexOf(blablabla)}  - ${blablabla.title}`;
+        li.style.textAlign = 'left';
+        li.style.fontSize = '20px';
+        li.style.boxSizing = 'border-box';
+        li.style.paddingBottom = '2%';
+
+        div.appendChild(ul);
+        ul.appendChild(li);
+        document.body.appendChild(div);
+    }
+    ;
+
+
+    let div1 = document.createElement('div');
+    div1.innerText = 'ЗМІСТ:';
+    div1.style.textAlign = 'center';
+    div1.style.fontSize = '160%';
+    div1.style.fontFamily = 'DejaVu Sans';
+    div1.style.background = 'crimson';
+    div1.style.width = '70%';
+    div1.style.height = '90%';
+    div1.style.borderRadius = '5px';
+    div1.style.marginLeft = '13%';
+    div1.style.borderRadius = '50px';
+
+    let div2 = document.createElement('div2');
+    div2.style.background = 'crimson';
+    div2.style.display = 'flex';
+    div2.style.flexWrap = 'wrap';
+    div2.style.borderRadius = '5px solid yellow';
+    div2.style.borderRadius = '50px';
+    div2.style.paddingBottom = '1%';
+
+    for (const blablablabla of rules) {
+
+        let div3 = document.createElement('div3');
+        div3.style.width = '100%';
+        div3.style.height = '20%';
+        div3.style.background = 'sandybrown';
+        div3.style.borderRadius = '30px';
+        div3.style.display = 'flex';
+        div3.style.flexWrap = 'wrap';
+        div3.style.boxSizing = 'border-box';
+        div3.style.padding = '0% 1% 0.1% 1%';
+
+        let div5 = document.createElement('div5');
+        div5.innerText = ` ${blablablabla.title}`;
+        div5.style.fontSize = '60%';
+        div5.style.fontFamily = 'DejaVu Sans';
+        div5.style.background = 'darkkhaki';
+        div5.style.border = '2px solid black';
+        div5.style.borderRadius = '30px';
+        div5.style.width = '38%';
+        div5.style.height = '18%';
+        div5.style.marginLeft = '32%';
+        div5.style.boxSizing = 'border-box';
+        div5.style.padding = '0.5%';
+
+        let div6 = document.createElement('div6');
+        div6.innerText = `${blablablabla.body}`;
+        div6.style.fontSize = '85%';
+        div6.style.fontFamily = 'DejaVu Sans';
+        div6.style.background = 'burlywood';
+        div6.style.border = '3px dotted crimson';
+        div6.style.borderRadius = '30px ';
+        div6.style.width = '80%';
+        div6.style.height = '20%';
+        div6.style.boxSizing = 'border-box';
+        div6.style.padding = '1.5%';
+        div6.style.marginLeft = '11%';
+
+        div3.append(div5, div6);
+        div2.append(div3);
+        div1.appendChild(div2);
+        document.body.appendChild(div1);
+
+    }
+    ;
+
+</script>
+</body>
+</html>
